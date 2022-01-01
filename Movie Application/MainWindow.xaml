@@ -1,0 +1,357 @@
+﻿<Window x:Class="Movie_Application.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:Movie_Application"
+        mc:Ignorable="d"
+        Title="Movie Application" Height="1080" Width="1920" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" WindowState="Maximized" 
+        Background="#FF151515" Icon="/AppImages/AppLogo.png" BorderBrush="AliceBlue" BorderThickness="3" WindowStyle="None">
+    <Grid>
+        <Button Margin="0 3 3 0" Height="30" Width="30" VerticalAlignment="Top" HorizontalAlignment="Right" Click="CloseButton_Click" Padding="0" Background="#FF151515" BorderThickness="0">
+            <Image  Margin="0" Stretch="Fill" Source="/AppImages/exit2.png"/>
+        </Button>
+        <Button Margin="0 3 40 0" Height="30" Width="30" VerticalAlignment="Top" HorizontalAlignment="Right" Click="MinimizeButton_Click"  Padding="0" Background="#FF151515" BorderThickness="0">
+            <Image Source="/AppImages/minimize.png" Margin="0" Stretch="Fill"/>
+        </Button>
+        <Grid x:Name="gridMain" Margin="0 50 0 0" Background="#FF151515">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="319*" />
+                <ColumnDefinition Width="1574*"/>
+                <ColumnDefinition Width="21*"/>
+            </Grid.ColumnDefinitions>
+            <Grid x:Name="gridLeft" Grid.Column="0" Background="#FF151515" Margin="0 0 0 0">
+                <StackPanel x:Name="spLeftTop" VerticalAlignment="Top">
+                    <Image Name="ibLogo" MouseEnter="ibLogo_MouseEnter" HorizontalAlignment="Stretch" Height="180" Source="AppImages/AppLogo.png" Stretch="Fill" Margin="0 0 0 20"/>
+                    <ListView Foreground="#FFDADADA" Background="#FF151515" HorizontalAlignment="Stretch" BorderThickness="0">
+                        <ListViewItem Height="50" Background="#FF151515" Padding="10 0 0 0" Margin="0 0 0 10">
+                            <ListViewItem.Style>
+                                <Style TargetType="{x:Type ListViewItem}">
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Foreground" Value="#FFB90404"/>
+                                            <Setter Property="Background" Value="Transparent"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </ListViewItem.Style>
+                            <StackPanel x:Name="spMovie" Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="Movie" Width="45" Height="45"/>
+                                <TextBlock Text="Movies" Width="136" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="20 0 0 0" FontFamily="Rockwell" Grid.IsSharedSizeScope="True"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Height="50" Background="#FF151515" Padding="10 0 0 0" Margin="0 0 0 10">
+                            <ListViewItem.Style>
+                                <Style TargetType="{x:Type ListViewItem}">
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Foreground" Value="#FFB90404"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </ListViewItem.Style>
+                            <StackPanel x:Name="spTvShow" Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="TvClassic" Width="45" Height="45"/>
+                                <TextBlock Text="TV Show" Width="160" FontSize="30" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="20 0 0 0" FontFamily="Rockwell" Grid.IsSharedSizeScope="True"/>
+                            </StackPanel>
+                        </ListViewItem>
+                    </ListView>
+                    <Separator Background="AliceBlue"/>
+                </StackPanel>
+                <StackPanel x:Name="spLeftCenter" VerticalAlignment="Top" Margin="0,364,0,0">
+                    <ListView Foreground="#FFDADADA" Background="#FF151515" HorizontalAlignment="Stretch" BorderThickness="0">
+                        <ListViewItem Height="50" Background="#FF151515" Padding="10 0 0 0" Margin="0 0 0 10" IsEnabled="False">
+                            <ListViewItem.Style>
+                                <Style TargetType="{x:Type ListViewItem}">
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Foreground" Value="#FFB90404"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </ListViewItem.Style>
+                            <StackPanel x:Name="spUserName" Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="User" Width="45" Height="45"/>
+                                <TextBlock Name="tbUsername" Text="Username" Width="193" FontSize="30" HorizontalAlignment="Stretch"  VerticalAlignment="Center" Margin="0 0 0 0" FontFamily="Rockwell" Grid.IsSharedSizeScope="True"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Height="50" Background="#FF151515" Padding="10 0 0 0" Margin="0 0 0 10">
+                            <ListViewItem.Style>
+                                <Style TargetType="{x:Type ListViewItem}">
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Foreground" Value="#FFB90404"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </ListViewItem.Style>
+                            <StackPanel Name="spWatchList" Orientation="Horizontal" Width="282" PreviewMouseDown="spWatchList_PreviewMouseDown">
+                                <materialDesign:PackIcon Kind="PlaylistPlay" Width="45" Height="45"/>
+                                <TextBlock Text="Watch List" Width="218" FontSize="30" HorizontalAlignment="Stretch"  VerticalAlignment="Center" Margin="0 0 0 0" FontFamily="Rockwell" Grid.IsSharedSizeScope="True"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Height="50" Background="#FF151515" Padding="10 0 0 0" Margin="0 0 0 10" IsEnabled="False">
+                            <ListViewItem.Style>
+                                <Style TargetType="{x:Type ListViewItem}">
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Foreground" Value="#FFB90404"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </ListViewItem.Style>
+                            <StackPanel x:Name="spAdminMenu" Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="MenuOpen" Width="45" Height="45"/>
+                                <TextBlock Text="Admin Menu" Width="193" FontSize="30" HorizontalAlignment="Stretch"  VerticalAlignment="Center" Margin="0 0 0 0" FontFamily="Rockwell" Grid.IsSharedSizeScope="True"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Height="50" Background="#FF151515" Padding="10 0 0 0" Margin="0 0 0 10">
+                            <ListViewItem.Style>
+                                <Style TargetType="{x:Type ListViewItem}">
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Foreground" Value="#FFB90404"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </ListViewItem.Style>
+                            <StackPanel x:Name="spAdminMenu1" Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="MenuOpen" Width="45" Height="45" Visibility="Hidden"/>
+                                <TextBlock Name="ad1" Text="User watch list" Width="220" FontSize="30" HorizontalAlignment="Stretch"  VerticalAlignment="Center" Margin="0 0 0 0" FontFamily="Rockwell" Grid.IsSharedSizeScope="True"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <ListViewItem Height="50" Background="#FF151515" Padding="10 0 0 0" Margin="0 0 0 10">
+                            <ListViewItem.Style>
+                                <Style TargetType="{x:Type ListViewItem}">
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Foreground" Value="#FFB90404"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </ListViewItem.Style>
+                            <StackPanel x:Name="spAdminMenu2" Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="MenuOpen" Width="45" Height="45" Visibility="Hidden"/>
+                                <TextBlock Name="ad2" Text="Access to data" Width="222" FontSize="30" HorizontalAlignment="Stretch"  VerticalAlignment="Center" Margin="0 0 0 0" FontFamily="Rockwell" Grid.IsSharedSizeScope="True"/>
+                            </StackPanel>
+                        </ListViewItem>
+                    </ListView>
+                    <Separator/>
+                </StackPanel>
+                <StackPanel x:Name="spLeftBootom" VerticalAlignment="Bottom" Margin="0 0 0 20">
+                    <ListView Foreground="#FFDADADA" Background="#FF151515" HorizontalAlignment="Stretch" BorderThickness="0">
+                        <ListViewItem Height="50" Background="#FF151515" Padding="10 0 0 0" Margin="0 0 0 10">
+                            <ListViewItem.Style>
+                                <Style TargetType="{x:Type ListViewItem}">
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Foreground" Value="#FFB90404"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </ListViewItem.Style>
+                            <StackPanel x:Name="spAboutApp" Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="About" Width="45" Height="45"/>
+                                <TextBlock Text="About App" Width="183" FontSize="30" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="0 0 0 0" FontFamily="Rockwell" Grid.IsSharedSizeScope="True"/>
+                            </StackPanel>
+                        </ListViewItem>
+                    </ListView>
+                </StackPanel>
+            </Grid>
+            <Grid x:Name="gridRight" Grid.Column="1" Background="#FF051525" Grid.ColumnSpan="2">
+                <Border CornerRadius="20 0 0 0" BorderBrush="AliceBlue" BorderThickness="3,3,0,0"/>
+                <Grid x:Name="gridRightMenu" Margin="10 10 0 0" VerticalAlignment="Top">
+                    <ListView Background="#FF051525" Foreground="AliceBlue" BorderThickness="0" Padding="8" BorderBrush="AliceBlue">
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel x:Name="spRightTop" Orientation="Horizontal"></StackPanel>
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                        <ListViewItem Padding="0" Margin="0 0 15 0" BorderBrush="AliceBlue" Background="#FF051525">
+                            <DockPanel Name="dpGenre">
+                                <Menu DockPanel.Dock="Top" Padding="0" Margin="0" Background="#FF051525" Foreground="AliceBlue">
+                                    <MenuItem VerticalAlignment="Center" Height="50" Margin="0" Padding="0 0 0 0" Background="#FF051525">
+                                        <MenuItem.Header>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0">
+                                                <materialDesign:PackIcon Kind="Menu" Width="40" Height="40" VerticalAlignment="Center" />
+                                                <TextBlock Text="Genre" VerticalAlignment="Center" FontSize="30" FontFamily="Rockwell" Margin="5 0"/>
+                                                <materialDesign:PackIcon Kind="ArrowBottomBold" Width="20" Height="20" VerticalAlignment="Bottom" Margin="0 0 0 7"/>
+                                            </StackPanel>
+                                        </MenuItem.Header>
+                                        <MenuItem Name="ActionMovie" Click="ActionMovie_Click" Header="Action" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="Comedy" Click="Comedy_Click" Header="Comedy" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="Drama" Click="Drama_Click" Header="Drama" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="Horror" Click="Horror_Click" Header="Horror" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="Romance" Click="Romance_Click" Header="Romance" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="ActionComedy" Click="ActionComedy_Click" Header="Action-Comedy" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="ActionDrama" Click="ActionDrama_Click" Header="Action-Drama" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="ActionHorror" Click="ActionHorror_Click" Header="Action-Horror" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="ActionRomance" Click="ActionRomance_Click" Header="Action-Romance" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="DramaComedy" Click="DramaComedy_Click" Header="Drama-Comedy" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="DramaRomance" Click="DramaRomance_Click" Header="Drama-Romance" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="DramaHorror" Click="DramaHorror_Click" Header="Drama-Horror" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="ComedyRomance" Click="ComedyRomance_Click" Header="Comedy-Romance" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="ComedyHorror" Click="ComedyHorror_Click" Header="Comedy-Horror" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="HorrorRomance" Click="HorrorRomance_Click" Header="Horror-Romance" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                    </MenuItem>
+                                </Menu>
+                            </DockPanel>
+                        </ListViewItem>
+                        <ListViewItem Padding="0" Margin="0 0 15 0" BorderBrush="AliceBlue" Background="#FF051525">
+                            <DockPanel Name="dpYear">
+                                <Menu DockPanel.Dock="Top" Padding="0" Margin="0" Background="#FF051525" Foreground="AliceBlue">
+                                    <MenuItem VerticalAlignment="Center" Height="50" Margin="0" Padding="0 0 0 0" Background="#FF051525">
+                                        <MenuItem.Header>
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="0">
+                                                <materialDesign:PackIcon Kind="DateRange" Width="40" Height="40" VerticalAlignment="Center" />
+                                                <TextBlock Text="Year" VerticalAlignment="Center" FontSize="30" FontFamily="Rockwell" Margin="5 0"/>
+                                                <materialDesign:PackIcon Kind="ArrowBottomBold" Width="20" Height="20" VerticalAlignment="Bottom" Margin="0 0 0 7"/>
+                                            </StackPanel>
+                                        </MenuItem.Header>
+                                        <MenuItem Name="y2021" Click="y2021_Click" Header="2021" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="y2020" Click="y2020_Click" Header="2020" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="y2019" Click="y2019_Click" Header="2019" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="y2018" Click="y2018_Click" Header="2018" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="y2017" Click="y2017_Click" Header="2017" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="y2016" Click="y2016_Click" Header="2016" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="y2015" Click="y2015_Click" Header="2015" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                        <MenuItem Name="y2014_2000" Click="y2014_2000_Click" Header="2014-2000" FontSize="18" FontFamily="Rockwell" Height="30" Background="#FF051525" BorderThickness="0" FontStretch="SemiCondensed" FontWeight="Thin" Margin="-5,0,0,0"/>
+                                    </MenuItem>
+                                </Menu>
+                            </DockPanel>
+                        </ListViewItem>
+                        <ListViewItem Padding="10 5" BorderBrush="AliceBlue">
+                            <StackPanel x:Name="spRaiting" Orientation="Horizontal">
+                                <materialDesign:PackIcon Kind="SortAscending" Width="40" Height="40" VerticalAlignment="Center"/>
+                                <TextBlock Text="Rating" VerticalAlignment="Center" FontSize="30" FontFamily="Rockwell" Margin="10 0 5 0"/>
+                                <materialDesign:PackIcon Kind="ArrowBottomBold" Width="20" Height="20" VerticalAlignment="Bottom" Margin="0 0 0 7"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <TextBlock Name="tbOption" FontSize="20" Margin="10 20 0 0" Foreground="AliceBlue"/>
+                    </ListView>
+                    <StackPanel x:Name="spSearch" Orientation="Horizontal" HorizontalAlignment="Right">
+                        <TextBox Width="400" Height="40" FontSize="30" VerticalAlignment="Center" Margin="0 0 10 0" Padding="10 0 0 5">
+                            <TextBox.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="20"/>
+                                </Style>
+                            </TextBox.Resources>
+                        </TextBox>
+                        <materialDesign:PackIcon Kind="Search" Width="40" Height="40" Foreground="AliceBlue" VerticalAlignment="Center"/>
+                        <Label Content="Search" Margin="0 0 20 0" Foreground="AliceBlue" FontSize="30" FontFamily="Rockwell" VerticalContentAlignment="Center"/>
+                    </StackPanel>
+                    <Separator VerticalAlignment="Bottom"  Background="AliceBlue" Margin="-8,0,0,2"/>
+                </Grid>
+                <Grid x:Name="gridContent" Margin="0 80 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid x:Name="gridContent00" Grid.Column="0" Grid.Row="0" Margin="20 10 20 30" Background="#FF151515" UIElement.PreviewMouseDown="gridContent00_PreviewMouseDown" MouseEnter="gridContent00_MouseEnter"  MouseLeave="gridContent00_MouseLeave">
+                        <Border Name="br00" BorderBrush="AliceBlue"  BorderThickness="2"/>
+                        <Image Name="ib00" Margin="3 3 3 30" Stretch="Fill"/>
+                        <Label Name="lbl00" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Foreground="AliceBlue" FontFamily="Rockwell"/>
+                        <Image Name="i00" Source="AppImages/PlayImages.png" Height="62" Width="95" Visibility="Hidden"/>
+                    </Grid>
+                    <Grid x:Name="gridContent01" Grid.Column="0" Grid.Row="1" Margin="20 10 20 30" Background="#FF151515" UIElement.PreviewMouseDown="gridContent01_PreviewMouseDown"  MouseEnter="gridContent01_MouseEnter"  MouseLeave="gridContent01_MouseLeave">
+                        <Border Name="b01" BorderBrush="AliceBlue" BorderThickness="2"/>
+                        <Image Name="ib01" Margin="3 3 3 30" Stretch="Fill"/>
+                        <Label Name="lbl01" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Foreground="AliceBlue" FontFamily="Rockwell"/>
+                        <Image Name="i01" Source="AppImages/PlayImages.png" Height="62" Width="95" Visibility="Hidden"/>
+                    </Grid>
+                    <Grid x:Name="gridContent02" Grid.Column="0" Grid.Row="2" Margin="20 10 20 30" Background="#FF151515" UIElement.PreviewMouseDown="gridContent02_PreviewMouseDown" MouseEnter="gridContent02_MouseEnter" MouseLeave="gridContent02_MouseLeave">
+                        <Border Name="b02" BorderBrush="AliceBlue" BorderThickness="2"/>
+                        <Image Name="ib02" Margin="3 3 3 30" Stretch="Fill"/>
+                        <Label Name="lbl02" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Foreground="AliceBlue" FontFamily="Rockwell"/>
+                        <Image Name="i02" Source="AppImages/PlayImages.png" Height="62" Width="95" Visibility="Hidden"/>
+                    </Grid>
+                    <Grid x:Name="gridContent10" Grid.Column="1" Grid.Row="0" Margin="20 10 20 30" Background="#FF151515">
+                        <Border Name="b10" BorderBrush="AliceBlue" BorderThickness="2"/>
+                        <Image Name="ib10" Margin="3 3 3 30" Stretch="Fill"/>
+                        <Label Name="lbl10" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Foreground="AliceBlue" FontFamily="Rockwell"/>
+                    </Grid>
+                    <Grid x:Name="gridContent11" Grid.Column="1" Grid.Row="1" Margin="20 10 20 30" Background="#FF151515">
+                        <Border Name="b11" BorderBrush="AliceBlue" BorderThickness="2"/>
+                        <Image Name="ib11" Margin="3 3 3 30" Stretch="Fill"/>
+                        <Label Name="lbl11" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Foreground="AliceBlue" FontFamily="Rockwell"/>
+                    </Grid>
+                    <Grid x:Name="gridContent12" Grid.Column="1" Grid.Row="2" Margin="20 10 20 30" Background="#FF151515">
+                        <Border Name="b12" BorderBrush="AliceBlue" BorderThickness="2"/>
+                        <Image Name="ib12" Margin="3 3 3 30" Stretch="Fill"/>
+                        <Label Name="lbl12" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Foreground="AliceBlue" FontFamily="Rockwell"/>
+                    </Grid>
+                    <Grid x:Name="gridContent20" Grid.Column="2" Grid.Row="0" Margin="20 10 20 30" Background="#FF151515">
+                        <Border Name="b20" BorderBrush="AliceBlue" BorderThickness="2"/>
+                        <Image Name="ib20" Margin="3 3 3 30" Stretch="Fill"/>
+                        <Label Name="lbl20" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Foreground="AliceBlue" FontFamily="Rockwell"/>
+                    </Grid>
+                    <Grid x:Name="gridContent21" Grid.Column="2" Grid.Row="1" Margin="20 10 20 30" Background="#FF151515">
+                        <Border Name="b21" BorderBrush="AliceBlue" BorderThickness="2"/>
+                        <Image Name="ib21" Margin="3 3 3 30" Stretch="Fill"/>
+                        <Label Name="lbl21" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Foreground="AliceBlue" FontFamily="Rockwell"/>
+                    </Grid>
+                    <Grid x:Name="gridContent22" Grid.Column="2" Grid.Row="2" Margin="20 10 20 30" Background="#FF151515">
+                        <Border Name="b22" BorderBrush="AliceBlue" BorderThickness="2"/>
+                        <Image Name="ib22" Margin="3 3 3 30" Stretch="Fill"/>
+                        <Label Name="lbl22" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Foreground="AliceBlue" FontFamily="Rockwell"/>
+                    </Grid>
+                    <Grid x:Name="gridContent30" Grid.Column="3" Grid.Row="0" Margin="20 10 20 30" Background="#FF151515">
+                        <Border Name="b30" BorderBrush="AliceBlue" BorderThickness="2"/>
+                        <Image Name="ib30" Margin="3 3 3 30" Stretch="Fill"/>
+                        <Label Name="lbl30" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Foreground="AliceBlue" FontFamily="Rockwell"/>
+                    </Grid>
+                    <Grid x:Name="gridContent31" Grid.Column="3" Grid.Row="1" Margin="20 10 20 30" Background="#FF151515">
+                        <Border Name="b31" BorderBrush="AliceBlue" BorderThickness="2"/>
+                        <Image Name="ib31" Margin="3 3 3 30" Stretch="Fill"/>
+                        <Label Name="lbl31" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Foreground="AliceBlue" FontFamily="Rockwell"/>
+                    </Grid>
+                    <Grid x:Name="gridContent32" Grid.Column="3" Grid.Row="2" Margin="20 10 20 30" Background="#FF151515">
+                        <Border Name="b32" BorderBrush="AliceBlue" BorderThickness="2"/>
+                        <Image Name="ib32" Margin="3 3 3 30" Stretch="Fill"/>
+                        <Label Name="lbl32" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Foreground="AliceBlue" FontFamily="Rockwell"/>
+                    </Grid>
+                    <Grid x:Name="gridContent40" Grid.Column="4" Grid.Row="0" Margin="20 10 20 30" Background="#FF151515">
+                        <Border Name="b40" BorderBrush="AliceBlue" BorderThickness="2"/>
+                        <Image Name="ib40" Margin="3 3 3 30" Stretch="Fill"/>
+                        <Label Name="lbl40" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Foreground="AliceBlue" FontFamily="Rockwell"/>
+                    </Grid>
+                    <Grid x:Name="gridContent41" Grid.Column="4" Grid.Row="1" Margin="20 10 20 30" Background="#FF151515">
+                        <Border Name="b41" BorderBrush="AliceBlue" BorderThickness="2"/>
+                        <Image Name="ib41" Margin="3 3 3 30" Stretch="Fill"/>
+                        <Label Name="lbl41" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Foreground="AliceBlue" FontFamily="Rockwell"/>
+                    </Grid>
+                    <Grid x:Name="gridContent42" Grid.Column="4" Grid.Row="2" Margin="20 10 20 30" Background="#FF151515">
+                        <Border Name="b42" BorderBrush="AliceBlue" BorderThickness="2"/>
+                        <Image Name="ib42"  Margin="3 3 3 30" Stretch="Fill"/>
+                        <Label Name="lbl42" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Foreground="AliceBlue" FontFamily="Rockwell"/>
+                    </Grid>
+                    <Grid x:Name="gridContent50" Grid.Column="5" Grid.Row="0" Margin="20 10 20 30" Background="#FF151515">
+                        <Border Name="b50" BorderBrush="AliceBlue" BorderThickness="2"/>
+                        <Image Name="ib50"  Margin="3 3 3 30" Stretch="Fill"/>
+                        <Label Name="lbl50" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Foreground="AliceBlue" FontFamily="Rockwell"/>
+                    </Grid>
+                    <Grid x:Name="gridContent51" Grid.Column="5" Grid.Row="1" Margin="20 10 20 30" Background="#FF151515">
+                        <Border Name="b51" BorderBrush="AliceBlue" BorderThickness="2"/>
+                        <Image Name="ib51"  Margin="3 3 3 30" Stretch="Fill"/>
+                        <Label Name="lbl51" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Foreground="AliceBlue" FontFamily="Rockwell"/>
+                    </Grid>
+                    <Grid x:Name="gridContent52" Grid.Column="5" Grid.Row="2" Margin="20 10 20 30" Background="#FF151515">
+                        <Border Name="b52" BorderBrush="AliceBlue" BorderThickness="2"/>
+                        <Image Name="ib52"  Margin="3 3 3 30" Stretch="Fill"/>
+                        <Label Name="lbl52" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="18" Foreground="AliceBlue" FontFamily="Rockwell"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "q/Ax6x3pqQ2xTMcV4UY7PIaULQjHRwaJQu5Pc7ibuUySNiMiC7x8j39vnlsZNnMRGhADdG0SNWT4Dy+XL/Y8sQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DELL\\OneDrive\\Desktop\\AVT\\AVT\\Movie Application\\Movie Application\\Movie Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\materialdesigncolors\\2.0.1\\materialdesigncolors.2.0.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\materialdesignthemes\\4.1.0\\materialdesignthemes.4.1.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.vcrtforwarders.140\\1.0.6\\microsoft.vcrtforwarders.140.1.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}

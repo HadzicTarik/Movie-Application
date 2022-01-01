@@ -1,0 +1,42 @@
+﻿<Window x:Class="Movie_Application.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Movie_Application"
+        mc:Ignorable="d"
+        Title="Login" Height="400" Width="350" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#FF051525" FontSize="14" WindowStyle="None"
+        BorderBrush="AliceBlue" BorderThickness="2">
+    <Grid>
+        <Button Margin="0 3 3 0" Height="18" Width="18" VerticalAlignment="Top" HorizontalAlignment="Right" Click="CloseButton_Click" Padding="0" Background="#FF151515" BorderThickness="0">
+            <Image  Margin="0" Stretch="Fill" Source="/AppImages/exit2.png"/>
+        </Button>
+        <Button Margin="0 3 25 0" Height="18" Width="18" VerticalAlignment="Top" HorizontalAlignment="Right" Click="MinimizeButton_Click"  Padding="0" Background="#FF151515" BorderThickness="0">
+            <Image Source="/AppImages/minimize.png" Margin="0" Stretch="Fill"/>
+        </Button>
+        <Border Background="#FF151515" CornerRadius="30" Margin="20" BorderThickness="2" BorderBrush="AliceBlue">
+            <StackPanel Margin="20">
+                <Label Content="Login" HorizontalAlignment="Center" FontSize="29" Foreground="AliceBlue"/>
+                <Separator Background="AliceBlue"/>
+                <Label Content="Username:" Foreground="AliceBlue" Padding="0 4 4 4"/>
+                <TextBox Name="tbUsername" Height="25" Background="#FF051525" BorderThickness="2" BorderBrush="AliceBlue" Foreground="AliceBlue" />
+                <Label Content="Password:" Foreground="AliceBlue" Padding="0 4 4 4"/>
+                <PasswordBox Name="pbPassword" Height="25" Background="#FF051525" BorderThickness="2" BorderBrush="AliceBlue" Foreground="AliceBlue"/>
+                <Button Name="btnLogin" Click="LoginSubmit_Click" Height="30" Margin="60 20 60 0" Background="#FF003A03" BorderThickness="2" BorderBrush="AliceBlue" Foreground="AliceBlue">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="login" Width="25" Height="25" Margin="0 0 5 0"/>
+                        <TextBlock Text="Login" Foreground="AliceBlue" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Label Content="OR" FontSize="15" Foreground="AliceBlue" HorizontalAlignment="Center"/>
+                <Button Name="btnRegister" Click="Register_Click" Height="30" Margin="60 0" Background="#FF510000" BorderThickness="2" BorderBrush="AliceBlue" Foreground="AliceBlue">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Register" Width="25" Height="25" Margin="0 0 5 0"/>
+                        <TextBlock Text="Register" Foreground="AliceBlue" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

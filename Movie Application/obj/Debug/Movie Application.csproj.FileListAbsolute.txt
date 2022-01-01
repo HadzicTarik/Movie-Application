@@ -1,0 +1,118 @@
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\Movie Application.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\Login.g.cs
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\MainWindow.g.cs
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\PlayVideo.g.cs
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\PlayVideo01.g.cs
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\PlayVideo02.g.cs
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\Register.g.cs
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\App.g.cs
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\Movie Application_Content.g.cs
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\Movie Application_MarkupCompile.cache
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\Movie Application_MarkupCompile.lref
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\Movie Application.exe.config
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\Movie Application.exe
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\Movie Application.pdb
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.xml
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\MaterialDesignColors.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.Managed.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.winmd
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\System.Windows.Controls.Layout.Toolkit.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\WPFtoolkitFramework.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\MaterialDesignColors.pdb
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.Managed.pdb
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.Managed.xml
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\Login.baml
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\MainWindow.baml
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\PlayVideo.baml
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\PlayVideo01.baml
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\PlayVideo02.baml
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\Register.baml
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\Movie Application.g.resources
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\Movie_Application.Properties.Resources.resources
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\Movie Application.csproj.GenerateResource.cache
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\Movie Application.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\Movie Application.csproj.CopyComplete
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\Movie Application.exe
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\Movie Application.pdb
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\bin\Debug\EntityFramework.dll
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\WatchList.g.cs
+C:\Users\DELL\source\repos\Movie Application\Movie Application\obj\Debug\WatchList.baml
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\Movie Application.exe.config
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\Movie Application.exe
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\Movie Application.pdb
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.xml
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\EntityFramework.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\MaterialDesignColors.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\MaterialDesignColors.pdb
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.Managed.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.winmd
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\WPFtoolkitFramework.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.Managed.pdb
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\Microsoft.Toolkit.Win32.UI.XamlHost.Managed.xml
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\Movie Application.csproj.AssemblyReference.cache
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\Login.g.cs
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\MainWindow.g.cs
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\PlayVideo.g.cs
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\PlayVideo01.g.cs
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\PlayVideo02.g.cs
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\Register.g.cs
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\WatchList.g.cs
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\App.g.cs
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\Movie Application_Content.g.cs
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\Movie Application_MarkupCompile.cache
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\Movie Application_MarkupCompile.lref
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\Login.baml
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\MainWindow.baml
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\PlayVideo.baml
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\PlayVideo01.baml
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\PlayVideo02.baml
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\Register.baml
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\WatchList.baml
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\Movie Application.g.resources
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\Movie_Application.Properties.Resources.resources
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\Movie Application.csproj.GenerateResource.cache
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\Movie Application.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\Movie Application.csproj.CopyComplete
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\Movie Application.exe
+C:\Users\DELL\OneDrive\Desktop\AVT\AVT\Movie Application\Movie Application\obj\Debug\Movie Application.pdb

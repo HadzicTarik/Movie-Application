@@ -1,0 +1,92 @@
+﻿<Window x:Class="Movie_Application.PlayVideo02"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:System_Windows_Controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Input.Toolkit"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Movie_Application"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+       Title="PlayVideo" Padding=" 50 0" WindowStyle="None" Background="#FF151515" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Button Margin="0 0 3 0" Height="25" Width="25" VerticalAlignment="Top" HorizontalAlignment="Right" Click="ButtonClose_Click"  Padding="0" Background="#FF151515" BorderThickness="0">
+            <Image  Margin="0" Stretch="Fill" Source="/AppImages/exit2.png"/>
+        </Button>
+        <Button Margin="0 0 30 0" Height="25" Width="25" VerticalAlignment="Top" HorizontalAlignment="Right" Click="ButtonMinimized_Click"  Padding="0" Background="#FF151515" BorderThickness="0">
+            <Image Source="/AppImages/minimize.png" Margin="0" Stretch="Fill"/>
+        </Button>
+        <Border x:Name="brMovie" Margin="20 28 20 100" BorderThickness="3" BorderBrush="AliceBlue">
+            <Grid x:Name="gridPlayVideo" Margin="0">
+                <MediaElement x:Name="VideoControl" Volume="100"  Source="C:\Users\DELL\source\repos\Movie Application\Movie Application\AppVideos/Spider-man 3.wmv" UnloadedBehavior="Manual" LoadedBehavior="Manual" Stretch="Fill"/>
+                <Button x:Name="btnPlay" Height="25" Width="25" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="PlayButton_Click" Background="AntiqueWhite">
+                    <Image Source="/AppImages/VideoPlay.png"/>
+                </Button>
+                <Button x:Name="btnPause" Height="25" Width="25" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="PauseButton_Click" Background="AntiqueWhite" IsEnabled="False" Margin="30 0 0 0">
+                    <Image Source="/AppImages/VideoPause.png" />
+                </Button>
+                <Button x:Name="btnStop" Height="25" Width="25" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="btnStop_Click" Background="AntiqueWhite" IsEnabled="False" Margin="60 0 0 0">
+                    <Image Source="/AppImages/VideoStop.png" />
+                </Button>
+            </Grid>
+        </Border>
+        <Grid VerticalAlignment="Bottom" Margin="20 0 20 7" Height="85">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Text="Movie Name:" Foreground="AliceBlue" FontSize="30" HorizontalAlignment="Center"/>
+                    <TextBlock Name="tbMovieName" Text="" Foreground="AliceBlue" FontSize="30" HorizontalAlignment="Center"/>
+                </StackPanel>
+                <Separator VerticalAlignment="Top"/>
+                <Grid VerticalAlignment="Bottom" Margin="10 10 0 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock Text="Data Relased:" Foreground="AliceBlue" FontSize="15"/>
+                        <TextBlock Name="tbDataRelased" Text="" Foreground="AliceBlue" FontSize="15" Margin="7 0 0 0"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Orientation="Horizontal">
+                        <TextBlock Text="Genre:" Foreground="AliceBlue" FontSize="15"/>
+                        <TextBlock Name="tbGenre" Text="" Foreground="AliceBlue" FontSize="15" Margin="7 0 0 0"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Orientation="Horizontal">
+                        <TextBlock Text="Actor:" Foreground="AliceBlue" FontSize="15"/>
+                        <TextBlock Name="tbActor" Text="" Foreground="AliceBlue" FontSize="15" Margin="7 0 0 0"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="3" Orientation="Horizontal">
+                        <TextBlock Text="Director:" Foreground="AliceBlue" FontSize="15"/>
+                        <TextBlock Name="tbDirector" Text="" Foreground="AliceBlue" FontSize="15" Margin="7 0 0 0"/>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <TextBlock Text="Movie Rating:" Foreground="AliceBlue" FontSize="30" HorizontalAlignment="Center"/>
+                <TextBlock Name="tbMovieRating" Text="-.-" Foreground="Yellow"  FontSize="30" HorizontalAlignment="Center" Margin="30 0 0 0" FontFamily="Segoe UI Black"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 0 0 5">
+                <TextBlock Name="tbRatedMovie" Text="Rate the movie" Foreground="AliceBlue" FontSize="20" HorizontalAlignment="Center"/>
+                <ComboBox Name="cbRatedMovie" Margin="5 0 0 0" Width="66" Height="20" MouseEnter="cbRatedMovie_MouseEnter">
+                    <ComboBoxItem>10</ComboBoxItem>
+                    <ComboBoxItem>9</ComboBoxItem>
+                    <ComboBoxItem>8</ComboBoxItem>
+                    <ComboBoxItem>7</ComboBoxItem>
+                    <ComboBoxItem>6</ComboBoxItem>
+                    <ComboBoxItem>5</ComboBoxItem>
+                    <ComboBoxItem>4</ComboBoxItem>
+                    <ComboBoxItem>3</ComboBoxItem>
+                    <ComboBoxItem>2</ComboBoxItem>
+                    <ComboBoxItem>1</ComboBoxItem>
+                    <ComboBoxItem IsSelected="True" IsEnabled="False">1 to 10</ComboBoxItem>
+                </ComboBox>
+                <Button Name="confirmRate" Content="OK" Click="confirmRate_Click" Foreground="Black" Padding="3 1 3 1" VerticalAlignment="Center" Margin="5 0 0 0" Visibility="Collapsed"/>
+            </StackPanel>
+        </Grid>
+        <TextBlock Name="tbUsername" Padding="5 0" Foreground="AliceBlue" HorizontalAlignment="Left" Margin="20,9,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

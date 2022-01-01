@@ -1,0 +1,71 @@
+﻿<Window x:Class="Movie_Application.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Movie_Application"
+        mc:Ignorable="d"
+        Title="Register" Width="596.561" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#FF051525" FontSize="14" 
+        Height="474.062" WindowStyle="None" BorderBrush="AliceBlue" BorderThickness="2">
+    <Grid>
+        <Button Margin="0 3 3 0" Height="18" Width="18" VerticalAlignment="Top" HorizontalAlignment="Right" Click="CloseButton_Click" Padding="0" Background="#FF151515" BorderThickness="0">
+            <Image  Margin="0" Stretch="Fill" Source="/AppImages/exit2.png"/>
+        </Button>
+        <Button Margin="0 3 25 0" Height="18" Width="18" VerticalAlignment="Top" HorizontalAlignment="Right" Click="MinimizeButton_Click"  Padding="0" Background="#FF151515" BorderThickness="0">
+            <Image Source="/AppImages/minimize.png" Margin="0" Stretch="Fill"/>
+        </Button>
+        <Border Background="#FF151515" CornerRadius="30" Margin="20" BorderThickness="2" BorderBrush="AliceBlue">
+            <Grid>
+                <StackPanel VerticalAlignment="Top" Margin="30 5">
+                    <Label Content="Register" FontSize="29" Foreground="AliceBlue" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                    <Separator Background="AliceBlue"/>
+                </StackPanel>
+                <StackPanel Name="spRegisterLest" Margin="30,70,0,10" HorizontalAlignment="Left" Width="227">
+                    <Label Content="Name:" Foreground="AliceBlue" Padding="0 4 4 4"/>
+                    <TextBox Name="tbName" Height="25" Background="#FF051525" BorderThickness="2" BorderBrush="AliceBlue" Foreground="AliceBlue" />
+                    <Label Content="Lastname:" Foreground="AliceBlue" Padding="0 4 4 4"/>
+                    <TextBox Name="tbLastname" Height="25" Background="#FF051525" BorderThickness="2" BorderBrush="AliceBlue" Foreground="AliceBlue" />
+                    <Label Content="Counrty:" Foreground="AliceBlue" Padding="0 4 4 4"/>
+                    <ComboBox Name="cbCountry" Height="25" Background="#FF051525" BorderThickness="2">
+                        <ComboBoxItem BorderThickness="0" Foreground="#FF5F6468" IsSelected="True" IsEnabled="False">Select Country...</ComboBoxItem>
+                        <ComboBoxItem BorderThickness="0">Turkey</ComboBoxItem>
+                        <ComboBoxItem BorderThickness="0">Bosnia</ComboBoxItem>
+                        <ComboBoxItem BorderThickness="0">Serbia</ComboBoxItem>
+                        <ComboBoxItem BorderThickness="0">Montenegro</ComboBoxItem>
+                        <ComboBoxItem BorderThickness="0">Albania</ComboBoxItem>
+                    </ComboBox>
+                    <Label Content="Gender:" Foreground="AliceBlue" Padding="0 4 4 4"/>
+                    <ComboBox Name="cbGender" Height="25" BorderThickness="2" BorderBrush="#FF051525">
+                        <ComboBoxItem BorderThickness="0" IsSelected="True" IsEnabled="False" Foreground="#FF5F6468">Select Gender...</ComboBoxItem>
+                        <ComboBoxItem BorderThickness="0">Male</ComboBoxItem>
+                        <ComboBoxItem BorderThickness="0">Female</ComboBoxItem>
+                    </ComboBox>
+                    <Label Content="Date of Birth:" Foreground="AliceBlue" Padding="0 4 4 4"/>
+                    <DatePicker Name="dpDateOfBirth" Height="25" Background="#FF051525" BorderThickness="2" BorderBrush="AliceBlue" Foreground="Black" Padding="0"/>
+                </StackPanel>
+                <StackPanel Name="spRegisterRight" HorizontalAlignment="Right" Margin="0,70,30,10" Width="227">
+                    <Label Content="Username:" Foreground="AliceBlue" Padding="0 4 4 4"/>
+                    <TextBox Name="tbUsername" Height="25" Background="#FF051525" BorderThickness="2" BorderBrush="AliceBlue" Foreground="AliceBlue" />
+                    <Label Content="Password:" Foreground="AliceBlue" Padding="0 4 4 4"/>
+                    <PasswordBox Name="pbPassword" Height="25" Background="#FF051525" BorderThickness="2" BorderBrush="AliceBlue" Foreground="AliceBlue" />
+                    <Label Content="Confirm Password:" Foreground="AliceBlue" Padding="0 4 4 4"/>
+                    <PasswordBox Name="pbRePassword" Height="25" Background="#FF051525" BorderThickness="2" BorderBrush="AliceBlue" Foreground="AliceBlue" />
+                    <Label Content="Image:" Foreground="AliceBlue" Padding="0 4 4 4"/>
+                    <StackPanel HorizontalAlignment="Left" Margin="0 0 0 0" Orientation="Horizontal">
+                        <Border BorderBrush="AliceBlue" BorderThickness="2">
+                            <Image Name="ibImage" Width="75" Height="75" Source="/AppImages/NoPhoto.png"/>
+                        </Border>
+                        <Button Content="AddPicture" Click="ButtonAddPicture_Click" Foreground="AliceBlue" Background="#FF051525" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20 0 0 0" Padding="5 0" BorderThickness="2" BorderBrush="AliceBlue"/>
+                    </StackPanel>
+                </StackPanel>
+                <Button Name="btnLogin" Click="ButtonRegisterSubmit_Click" Height="40" Margin="180 0 180 15" Background="#FF510000" BorderThickness="2" BorderBrush="AliceBlue" Foreground="AliceBlue" VerticalAlignment="Bottom">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="RegisterOutline" Width="28" Height="28" Margin="0 0 5 0"/>
+                        <TextBlock Text="Submit" Foreground="AliceBlue" VerticalAlignment="Center" FontSize="18"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
